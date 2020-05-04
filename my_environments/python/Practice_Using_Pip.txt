@@ -1,0 +1,382 @@
+Last login: Mon May  4 06:22:13 on console
+ben@Bens-MacBook-Pro ~ % pip list
+Package           Version
+----------------- ------------
+asgiref           3.2.7
+astroid           2.3.3
+beautifulsoup4    4.8.2
+certifi           2019.11.28
+chardet           3.0.4
+cycler            0.10.0
+Django            3.0.5
+idna              2.9
+isort             4.3.21
+joblib            0.14.1
+kiwisolver        1.1.0
+lazy-object-proxy 1.4.3
+lxml              4.5.0
+matplotlib        3.2.1
+mccabe            0.6.1
+multitasking      0.0.9
+numpy             1.18.2
+pandas            1.0.3
+pandas-datareader 0.8.1
+pip               20.1
+pylint            2.4.4
+pyparsing         2.4.6
+python-dateutil   2.8.1
+pytz              2019.3
+requests          2.23.0
+scikit-learn      0.22.2.post1
+scipy             1.4.1
+setuptools        41.2.0
+six               1.14.0
+sklearn           0.0
+soupsieve         2.0
+sqlparse          0.3.1
+urllib3           1.25.8
+wrapt             1.11.2
+yfinance          0.1.54
+ben@Bens-MacBook-Pro ~ % ls
+Applications	Downloads	Library		Pictures	work
+Desktop		Example		Movies		Public
+Documents	Google Drive	Music		venv35
+ben@Bens-MacBook-Pro ~ % cd Desktop
+ben@Bens-MacBook-Pro Desktop % ls
+95736221_10158398793056810_2183670323721797632_n.jpg
+Code.png
+Dojo
+Dojo_assignments
+FCC Frequency Allocations.pdf
+Finances.qxf
+Google_Foobar.png
+Nurture the Right Nature.mp3
+Screen Shot 2020-04-21 at 8.42.03 PM.png
+Screen Shot 2020-04-23 at 1.57.36 PM.png
+Screen Shot 2020-05-01 at 10.52.41 AM.png
+Screen Shot 2020-05-03 at 2.21.15 PM.png
+Screen Shot 2020-05-03 at 2.21.23 PM.png
+Screen Shot 2020-05-03 at 2.21.30 PM.png
+Screen Shot 2020-05-03 at 2.21.36 PM.png
+f-james.png
+index.html
+jsloups.png
+portfolio_assignment_(1).png
+style.css
+ben@Bens-MacBook-Pro Desktop % cd Dojo_assignments
+ben@Bens-MacBook-Pro Dojo_assignments % ls
+C#			Python
+MERN			Web_Fundamentals
+ben@Bens-MacBook-Pro Dojo_assignments % cd Python
+ben@Bens-MacBook-Pro Python % ls
+django		flask		my_environments	python
+ben@Bens-MacBook-Pro Python % cd my_environments
+ben@Bens-MacBook-Pro my_environments % Python 3 -m venv py3Env
+/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python: can't open file '3': [Errno 2] No such file or directory
+ben@Bens-MacBook-Pro my_environments % Python3 -m venv py3Env 
+ben@Bens-MacBook-Pro my_environments % pip list
+Package           Version
+----------------- ------------
+asgiref           3.2.7
+astroid           2.3.3
+beautifulsoup4    4.8.2
+certifi           2019.11.28
+chardet           3.0.4
+cycler            0.10.0
+Django            3.0.5
+idna              2.9
+isort             4.3.21
+joblib            0.14.1
+kiwisolver        1.1.0
+lazy-object-proxy 1.4.3
+lxml              4.5.0
+matplotlib        3.2.1
+mccabe            0.6.1
+multitasking      0.0.9
+numpy             1.18.2
+pandas            1.0.3
+pandas-datareader 0.8.1
+pip               20.1
+pylint            2.4.4
+pyparsing         2.4.6
+python-dateutil   2.8.1
+pytz              2019.3
+requests          2.23.0
+scikit-learn      0.22.2.post1
+scipy             1.4.1
+setuptools        41.2.0
+six               1.14.0
+sklearn           0.0
+soupsieve         2.0
+sqlparse          0.3.1
+urllib3           1.25.8
+wrapt             1.11.2
+yfinance          0.1.54
+ben@Bens-MacBook-Pro my_environments % source py3End/bin/activate
+source: no such file or directory: py3End/bin/activate
+ben@Bens-MacBook-Pro my_environments % pip list                  
+Package           Version
+----------------- ------------
+asgiref           3.2.7
+astroid           2.3.3
+beautifulsoup4    4.8.2
+certifi           2019.11.28
+chardet           3.0.4
+cycler            0.10.0
+Django            3.0.5
+idna              2.9
+isort             4.3.21
+joblib            0.14.1
+kiwisolver        1.1.0
+lazy-object-proxy 1.4.3
+lxml              4.5.0
+matplotlib        3.2.1
+mccabe            0.6.1
+multitasking      0.0.9
+numpy             1.18.2
+pandas            1.0.3
+pandas-datareader 0.8.1
+pip               20.1
+pylint            2.4.4
+pyparsing         2.4.6
+python-dateutil   2.8.1
+pytz              2019.3
+requests          2.23.0
+scikit-learn      0.22.2.post1
+scipy             1.4.1
+setuptools        41.2.0
+six               1.14.0
+sklearn           0.0
+soupsieve         2.0
+sqlparse          0.3.1
+urllib3           1.25.8
+wrapt             1.11.2
+yfinance          0.1.54
+ben@Bens-MacBook-Pro my_environments % deactivate
+zsh: command not found: deactivate
+ben@Bens-MacBook-Pro my_environments % source py3End/bin/deactivate
+source: no such file or directory: py3End/bin/deactivate
+ben@Bens-MacBook-Pro my_environments % source py3Env/bin/activate
+(py3Env) ben@Bens-MacBook-Pro my_environments % pip list
+Package    Version
+---------- -------
+pip        19.2.3 
+setuptools 41.2.0 
+WARNING: You are using pip version 19.2.3, however version 20.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(py3Env) ben@Bens-MacBook-Pro my_environments % pip install --upgrade pip
+Collecting pip
+  Using cached https://files.pythonhosted.org/packages/54/2e/df11ea7e23e7e761d484ed3740285a34e38548cf2bad2bed3dd5768ec8b9/pip-20.1-py2.py3-none-any.whl
+Installing collected packages: pip
+  Found existing installation: pip 19.2.3
+    Uninstalling pip-19.2.3:
+      Successfully uninstalled pip-19.2.3
+Successfully installed pip-20.1
+(py3Env) ben@Bens-MacBook-Pro my_environments % deactivate
+ben@Bens-MacBook-Pro my_environments % pip3 list
+Package           Version
+----------------- ------------
+asgiref           3.2.7
+astroid           2.3.3
+beautifulsoup4    4.8.2
+certifi           2019.11.28
+chardet           3.0.4
+cycler            0.10.0
+Django            3.0.5
+idna              2.9
+isort             4.3.21
+joblib            0.14.1
+kiwisolver        1.1.0
+lazy-object-proxy 1.4.3
+lxml              4.5.0
+matplotlib        3.2.1
+mccabe            0.6.1
+multitasking      0.0.9
+numpy             1.18.2
+pandas            1.0.3
+pandas-datareader 0.8.1
+pip               20.1
+pylint            2.4.4
+pyparsing         2.4.6
+python-dateutil   2.8.1
+pytz              2019.3
+requests          2.23.0
+scikit-learn      0.22.2.post1
+scipy             1.4.1
+setuptools        41.2.0
+six               1.14.0
+sklearn           0.0
+soupsieve         2.0
+sqlparse          0.3.1
+urllib3           1.25.8
+wrapt             1.11.2
+yfinance          0.1.54
+ben@Bens-MacBook-Pro my_environments % source py3Env/bin/activate
+(py3Env) ben@Bens-MacBook-Pro my_environments % pip install Django==2.2.4
+Collecting Django==2.2.4
+  Downloading Django-2.2.4-py3-none-any.whl (7.5 MB)
+     |████████████████████████████████| 7.5 MB 4.1 MB/s 
+Collecting pytz
+  Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+     |████████████████████████████████| 510 kB 15.3 MB/s 
+Collecting sqlparse
+  Using cached sqlparse-0.3.1-py2.py3-none-any.whl (40 kB)
+Installing collected packages: pytz, sqlparse, Django
+Successfully installed Django-2.2.4 pytz-2020.1 sqlparse-0.3.1
+(py3Env) ben@Bens-MacBook-Pro my_environments % pip freeze
+Django==2.2.4
+pytz==2020.1
+sqlparse==0.3.1
+(py3Env) ben@Bens-MacBook-Pro my_environments % cd ..
+(py3Env) ben@Bens-MacBook-Pro Python % cd ..
+(py3Env) ben@Bens-MacBook-Pro Dojo_assignments % cd ..
+(py3Env) ben@Bens-MacBook-Pro Desktop % pip freeze > requirements.txt
+(py3Env) ben@Bens-MacBook-Pro Desktop % ls
+95736221_10158398793056810_2183670323721797632_n.jpg
+Code.png
+Dojo
+Dojo_assignments
+FCC Frequency Allocations.pdf
+Finances.qxf
+Google_Foobar.png
+Nurture the Right Nature.mp3
+Screen Shot 2020-04-21 at 8.42.03 PM.png
+Screen Shot 2020-04-23 at 1.57.36 PM.png
+Screen Shot 2020-05-01 at 10.52.41 AM.png
+Screen Shot 2020-05-03 at 2.21.15 PM.png
+Screen Shot 2020-05-03 at 2.21.23 PM.png
+Screen Shot 2020-05-03 at 2.21.30 PM.png
+Screen Shot 2020-05-03 at 2.21.36 PM.png
+f-james.png
+index.html
+jsloups.png
+portfolio_assignment_(1).png
+requirements.txt
+style.css
+(py3Env) ben@Bens-MacBook-Pro Desktop % pip uninstall Django
+Found existing installation: Django 2.2.4
+Uninstalling Django-2.2.4:
+  Would remove:
+    /Users/ben/Desktop/Dojo_assignments/Python/my_environments/py3Env/bin/django-admin
+    /Users/ben/Desktop/Dojo_assignments/Python/my_environments/py3Env/bin/django-admin.py
+    /Users/ben/Desktop/Dojo_assignments/Python/my_environments/py3Env/lib/python3.8/site-packages/Django-2.2.4.dist-info/*
+    /Users/ben/Desktop/Dojo_assignments/Python/my_environments/py3Env/lib/python3.8/site-packages/django/*
+Proceed (y/n)? y
+  Successfully uninstalled Django-2.2.4
+(py3Env) ben@Bens-MacBook-Pro Desktop % pip show Django
+WARNING: Package(s) not found: Django
+(py3Env) ben@Bens-MacBook-Pro Desktop % pip search Flask
+Flask-Pure (0.5)            - Flask-Pure - a Flask extension for Pure.css
+Flask-SimpleMDE (0.3.0)     - Flask-SimpleMDE - a Flask extension for
+                              SimpleMDE
+Flask-OrientDB (0.1)        - A Flask extension for using OrientDB with Flask
+Flask-ElasticUtils (0.1.7)  - ElasticUtils for Flask
+Flask-PubSub (0.1.0)        - Flask-PubSub
+flask-helloworld (1.0.0)    - Flask Helloworld
+flask-zs (0.0.24)           - A helpers for Flask.
+Flask-Quik (0.1.1)          - Quik for Flask
+Flask-Waitress (0.0.1)      - Flask Waitress
+sockjs-flask (0.3)          - SockJs for Flask
+Flask-Stripe (0.1.0)        - Flask-Stripe
+Flask-BDEA (0.1.0)          - Flask-BDEA
+Flask-Helper (0.19)         - Flask Helper
+Flask-GripControl (0.0.1)   - Flask GripControl
+Flask-TinyMce (0.1.6)       - flask tinymce
+Flask-SRI (0.1.0)           - Flask-SRI
+flask-ws (0.0.1.0)          - Websocket for flask.
+Flask-MDE (1.2.0)           - Pagedown for Flask
+Flask-Intercom (0.1.0)      - Flask-Intercom
+Flask-SPF (0.0.0)           - Flask-SPF
+flask-toolbox (0.0.2)       - A flask toolbox.
+Flask-Turbolinks (0.2.0)    - Turbolinks for Flask.
+Flask-Watson (0.1.0)        - Flask-Watson
+Flask-FileRev (0.1.0)       - Flask-FileRev
+Flask-Ext (0.1)             - Extensions of Flask
+Flask-Shopify (0.2)         - Shopify Flask
+Flask-TaskTiger (0.0.1)     - Flask TaskTiger
+Flask-Weixin (0.5.0)        - Weixin for Flask.
+Fifty-Flask (1.4.0)         - Flask enhancements.
+Flask-Chargebee (0.0.1)     - Flask-Chargebee
+Flask-Keen (0.1.0)          - Flask-Keen
+flask-abort (0.0.1)         - flask abort
+flask-ypaginate (0.1.3)     - Pagination for Flask
+Flask-OAuthlib (0.9.5)      - OAuthlib for Flask
+Flask-Mustache (0.4.1)      - Mustache for Flask
+Flask-NextCaller (0.1.0)    - Flask-NextCaller
+Flask-AutoIndex (0.6.6)     - The mod_autoindex for Flask
+Flask-Clearbit (0.1.0)      - Flask-Clearbit
+Flask-FontAwesome (0.1.4)   - FontAwesome for Flask
+Flask-Gears (0.2)           - Gears for Flask
+Flask-GeoIP (0.1.3)         - Flask-GeoIP -------------  Simple Flask
+                              extension for pygeoip.
+airbrake-flask (1.0.7)      - airbrake-flask - Airbrake client for Python
+                              Flask
+Flask-Diced (0.3)           - Flask-Diced - CRUD views generator for Flask
+flask-myapi (0.1)           - Flask-MyAPI - RESTful support library for Flask
+Flask-RESTive (0.0.3)       - Flask RESTive is a REST API Flask extension
+                              based on Flask-RESTful & Marshmallow.
+Flask-LoginManager (1.1.6)  - Flask-Loginmanager supports multiple roles and
+                              permissions for Flask, inspired by Flask-Login
+Flask-FlatPagesCut (0.5.1)  - Flask-FlatPagesCut is fork Flask-FlatPages
+                              (Provides flat static pages to a Flask
+                              application)
+flask-lesscss (0.9.1)       - A small Flask extension that adds LessCSS
+                              support to Flask.
+flask-shell (0.1.3)         - Flask extension to improve shell command for the
+                              Flask CLI.
+flask-stylus2css (0.1)      - A small Flask extension that adds Stylus support
+                              to Flask.
+flask-coffee2js (0.1.2)     - A small Flask extension that adds CoffeScript
+                              support to Flask.
+Flask-Collect (1.3.2)       - Flask-Collect -- Collect static files in Flask
+                              application
+flask-filters (0.3)         - The Flask Filter to use with flask-restful and
+                              Relational DB
+Flask-Shelve (0.1.1)        - Shelve support for Flask
+Flask-Edits (0.8)           - Editable Content in Flask
+Flask-OpenID (1.2.5)        - OpenID support for Flask
+Flask-Triangle (0.5.4)      - Integration of AngularJS and Flask.
+flask-logsocketio (0.1.4)   - Flask LogSocketIo module
+Flask-mongobit (0.3.0)      - MongoBit support in Flask
+flask-serial (1.1.0)        - Flask extension for the Serial
+flask-discoverer (0.1.4)    - Flask API autodiscovery
+flask-iMail (0.1)           - Mailgun integration for Flask.
+flask-snow (0.2.8)          - Pysnow extension for Flask
+Flask-Slack (0.1.5)         - Slack extension for Flask.
+Flask-wechatpy (0.1.3)      - wechatpy for flask extension
+Flask-PyFCM (0.1.1)         - Flask extension for PyFCM
+Flask-CAS (1.0.2)           - Flask extension for CAS
+Flask-SAML (0.4.3)          - Flask SAML integration
+Flask-Flarf (0.0.5)         - Flask request filtering
+flask-tat (0.0.10)          - Flask TAT client
+flask-authentic (0.0.11)    - Flask Authentic Extension
+flask-adh (0.1)             - flask admin antd
+Flask-Sixpack (0.0.1)       - Flask wrapper for Sixpack
+flask-now (0.2.2)           - Flask App Generator
+Flask-Latch (0.1.0)         - Latch extension for Flask
+Flask-Config (0.2.1)        - Flask configuration class
+Flask-MySQLdb (0.2.0)       - MySQLdb extension for Flask
+Flask-RBAC (0.3.0)          - RBAC support for Flask
+Flask-Airbrake (0.0.3)      - Flask extension for Airbrake
+castle-flask (0.0.1)        - A Flask client for Castle.io
+flask-handlers (0.0.1)      - Handlers for Flask applications
+flask-keycloak (1.1.0)      - flask integration with keycloak
+flask-bluelogin (0.2.7)     - Flask BlueLogin module
+Flask-Reggie (0.0.2)        - Flask Regex Routes.
+Flask-OpenERP (0.3.1)       - OpenERP Connector for Flask
+Flask-CKEditor (0.4.4.1)    - CKEditor integration for Flask.
+Flask-CuttlePool (0.2.0)    - A Flask extension for CuttlePool
+Flask-Zero (0.9.6)          - Qiniu Storage for Flask
+Flask-Funnel (0.1.10)       - Asset management for Flask.
+Flask-Breve (0.2)           - Breve templating with Flask
+Flask-SaeStorage (0.9.0)    - SAE Storage for Flask
+Flask-Navigation (0.2.0)    - The navigation of Flask application.
+Flask-Passlib (0.1)         - Flask extension for passlib
+Flask-Triangle3 (0.5.3)     - Integration of AngularJS and Flask.
+Flask-ZMQ (0.1.2)           - Flask extension for ZMQ
+Flask-Autodoc (0.1.2)       - Documentation generator for flask
+Flask-Vises (2.1.4)         - A Flask scaffold library
+Flask-sshtunnel (0.1b2)     - sshtunnel extension for flask
+Flask-Enterprise (1.0)      - Enterprise capabilities for Flask
+Flask-Failsafe (0.2)        - A failsafe for the Flask reloader
+(py3Env) ben@Bens-MacBook-Pro Desktop % 
