@@ -30,3 +30,14 @@ def yet_another(request, name):         # name would be a string from the URL
     
 def one_more(request, id, color):       # id would be a number, and color a string from the URL
     return HttpResponse(id,color)       # given the example above, id would be 17 and color would be 'brown'
+
+
+# TEMPLATES    
+def templates(request):                 # This works as Well :)
+    context = {
+	"name": "Noelle",
+	"favorite_color": "turquoise",
+	"pets": ["Bruce", "Fitz", "Georgie"]
+    }
+    return render(request, "index.html", context)
+
