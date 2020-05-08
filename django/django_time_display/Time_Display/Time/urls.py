@@ -5,4 +5,5 @@ urlpatterns = [
     path('', views.index),
     path('/DonkeyCheck', views.DonkeyCheck),
     path('/CurrentTime',views.time),
+    path('/GetPost', views.GetPost)
 ]

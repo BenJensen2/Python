@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, redirect, HttpResponse
 from time import gmtime, strftime
     
 def time(request):
@@ -15,3 +15,18 @@ def DonkeyCheck(request):
     return render(request, 'shrek.html')
 
 # Create your views here.
+
+def GetPost(request):
+    # return HttpResponse('GetPost Works')
+    return render(request, 'get_post_template.html')
+
+        # if request.method == "POST":
+        #     val_from_field_one = request.POST["one"]
+    	# val_from_field_two = request.POST["two"]
+
+    # if request.method == "GET":
+    #     print("a GET request is being made to this route")
+    #     # return render(request, "get_post_template.html")
+    # if request.method == "POST":
+    #     print("a POST request is being made to this route")
+    #     # return redirect("/Time/GetPost")
