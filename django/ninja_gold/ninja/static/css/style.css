@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container, .header, .options, .output{
+    min-width: 500px;
+    border: dashed  blue;
+}
+
+.container{
+    min-height: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header{
+    min-height: 200px;
+}
+
+.header p{
+    display: inline-block;
+}
+
+.gold_display{
+    height: 50px;
+    width: 200px;
+    border: solid grey;
+}
+
+.options{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+}
+
+.farm, .cave, .house, .casino{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: dashed red
+}
+
+.footer{
+    min-height: 100px;
+}
