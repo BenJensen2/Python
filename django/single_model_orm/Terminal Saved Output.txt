@@ -1,0 +1,32 @@
+(djangoPy3Env) ben@Bens-MBP single_model_orm % python manage.py shell
+Python 3.8.2 (v3.8.2:7b3ab5921f, Feb 24 2020, 17:52:18) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from users_app.models import *
+>>> User.object.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'User' has no attribute 'object'
+>>> User.objects.all()
+<QuerySet []>
+>>> User.objects.create(first_name="Ben",last_name="Jensen",email_address="btjensen@mtu.edu",age=29)
+<User: User object (1)>
+>>> User.objects.create(first_name="Johhny",last_name="Mann",email_address="johhnymann@gmai.com",age=31)
+<User: User object (2)>
+>>> User.objects.create(first_name="Timmy",last_name="Taylor",email_address="mr_taylor@gmail.com",age=22)
+<User: User object (3)>
+>>> User.objects.all()
+<QuerySet [<User: User object (1)>, <User: User object (2)>, <User: User object (3)>]>
+>>> User.objects.last()
+<User: User object (3)>
+>>> User.objects.first()
+<User: User object (1)>
+>>> User.objects.get(id=3).last_name="Pancakes"
+>>> User.objects.get(id=2).delete()
+(1, {'users_app.User': 1})
+>>> User.objects.all().order_by("first_name")
+<QuerySet [<User: User object (1)>, <User: User object (3)>]>
+>>> User.objects.all().order_by("-first_name")
+<QuerySet [<User: User object (3)>, <User: User object (1)>]>
+>>> 
