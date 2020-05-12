@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    {% load static %}
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="users">
+            <h1>All the Users</h1>
+            <br>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Ben</td>
+                    <td>Hello@gmail.com</td>
+                    <td>25</td>
+                </tr>
+            </table>
+            <br>
+        </div>
+        <div class="add_user">
+            <form action="new_user" method="post">
+                {% csrf_token %}
+                <h1>Add a User</h1>
+                <br>
+                <table>
+                    <tr>
+                        <th>First Name</th>
+                        <th>
+                            <input type="text" name="first_name">
+                        </th>
+                        <th>&nbsp&nbsp Last Name</th>
+                        <th>
+                            <input type="text" name="last_name">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <th>
+                            <input type="text" name="email_address">
+                        </th>
+                        <th>&nbsp&nbsp Age</th>
+                        <th>
+                            <input type="number" name="age">
+                        </th>
+                    </tr>
+                </table>
+                <button type="submit">Add!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

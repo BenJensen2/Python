@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    min-height: 500px;
+    width: 800px;
+    margin: auto;
+    border: dashed red;
+    padding: 40px;
+}
+
+.users{
+    border-bottom: solid black;
+}
+
+h1{
+    text-align: center;
+}
+
+.users table{
+    width: 300px;
+    max-height: 200px;
+    overflow: scroll;
+    margin: auto;
+    text-align: left;
+}
+
+.add_user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add_user table{
+    width: 500px;
+    border-spacing: 0px 10px;
+    margin: auto;
+    text-align: left;
+}
+input{
+    width: 150px;
+    height: 30px;
+}
