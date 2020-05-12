@@ -6,16 +6,10 @@ def index(request):
     return HttpResponse('This is the start')
 
 def users(request):
-    # print('Users Page')
-    for identity in User.objects.all():
-        # context = {
-            
-        # }
-        print(identity.first_name)
-    # print(User.objects.get(id=1).first_name)
-    # for people in User.objects.all()
-    #     print(User.objects['first_name')
-    return render(request, 'index.html')
+    context = {
+        "all_users" : User.objects.all()   
+    }
+    return render(request, 'index.html',context)
 
 def new_user(request):
     print('New_User')
@@ -25,15 +19,4 @@ def new_user(request):
         email_address = request.POST['email_address'],
         age = request.POST['age'],
     )
-
-    # fname = request.POST['first_name']
-    # lname = request.POST['last_name']
-    # mail = request.POST['email']
-    # old = request.POST['age']
-
-    # print(fname)
-    # print(lname)
-    # print(mail)
-    # print(old)
-
     return redirect('/users')

@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users</title>
     {% load static %}
-    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <div class="container">
         <div class="users">
             <h1>All the Users</h1>
             <br>
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Age</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Ben</td>
-                    <td>Hello@gmail.com</td>
-                    <td>25</td>
-                </tr>
-            </table>
+            <div class="users_table">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                    </tr>
+                    {% for users in all_users %}
+                    <tr>
+                        <td>{{ users.id }}</td>
+                        <td>{{ users.first_name }}</td>
+                        <td>{{ users.email_address }}</td>
+                        <td>{{ users.age }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
             <br>
         </div>
         <div class="add_user">
