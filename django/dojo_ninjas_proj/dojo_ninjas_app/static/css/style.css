@@ -1,0 +1,18 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    height: 500px;
+    width: 700px;
+    border: dashed blue;
+    margin: auto;
+}
+
+.add{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
