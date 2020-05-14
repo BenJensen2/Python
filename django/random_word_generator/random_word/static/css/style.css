@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    /* border: dashed red; */
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.output{
+    margin-top: 45%;
+}
+
+.word{
+    padding: 20px;
+    border: solid grey;
+    width: 200px;
+    margin: auto;
+}
+
+button{
+    width: 75px;
+    height: 40px;
+    background-color: green;
+}
+
+.reset{
+    background-color: red;
+    width: 50px;
+    height: 30px;
+}

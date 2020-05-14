@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Word Generator</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    {% load static %}
+</head>
+<body>
+    <div class="container">
+        <div class="output">
+            <form action="random_word" method="post">
+                {% csrf_token %}
+                <p>Random Word (attempt #{{count}})</p>
+                <p class="word">{{word}}</p>
+                <button type="submit">Generate!</button>
+                <br>
+            </form>
+            <form action="reset" method="post">
+                {% csrf_token %}
+                <button class="reset" type="submit">Reset</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
