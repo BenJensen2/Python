@@ -13,4 +13,3 @@ class authors(models.Model):
     last_name = models.CharField(max_length=255)
     notes = models.TextField()
     authored_books = models.ManyToManyField(books,related_name="authors_included")
-    # books_authored: list of books by this author

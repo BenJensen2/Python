@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.authors{
+    width: 900px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 30px;
+}
+
+.add_author{
+    line-height: 35px;
+}
+
+form{
+    text-align: left;
+}
+
+.notes{
+    height: 50px;
+}
+
+.authors_table{
+    border: solid black;
+}
+
+.authors_table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

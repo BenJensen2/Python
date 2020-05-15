@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.books{
+    width: 900px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 30px;
+}
+
+.add_book{
+    line-height: 35px;
+}
+
+form{
+    text-align: left;
+}
+
+.description{
+    height: 50px;
+}
+
+.books_table{
+    border: solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

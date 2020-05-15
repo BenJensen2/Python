@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>author</title>
+    {% load static %}
+    <link rel="stylesheet" href="../static/css/author.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{author.first_name}} {{author.last_name}}</h1>
+        <br>
+        <h3 class="line_1">ID: {{author.id}}</h3>
+        <h3 class="line_1" id="notes">Notes:</h3>
+        <p>{{author.notes}}</p>
+        <br>
+        <br>
+        <h3 class="line_1">Books!:</h3>
+        <ul>{% for book in books %}
+            <li class="line_2">{{book.title}}</li>
+            {% endfor %}
+            <form action="add_book" method="post">
+                {% csrf_token %}
+                <select name="book_added" id="">
+                    <option value="">-select a book-</option>
+                    {% for book in all_books %}
+                    <option name="book_added" value={{book.id}}>{{book.title}}</option>
+                    {% endfor %}
+                </select>
+                <input type="hidden" name="author_id" value={{author.id}}> <!--Pass a hidden variable of book id-->
+                <button type="submit">Add</button>
+            </form>
+        </ul>
+    </div>
+    
+</body>
+</html>

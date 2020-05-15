@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    padding: 20px;
+    line-height: 25px;
+}
+
+.line_1{
+    margin-left: 10px;
+}
+
+.line_2{
+    margin-left: 40px;
+}
+
+#description, p{
+    display: inline-block;
+}
+
+p {
+    width: 400px;
+}
+
+li{
+    line-height: 20px;
+}
+select{
+    background-color: white;
+    border: solid grey;
+    width: 150px;
+    margin-left: 22px;
+    margin-right: 20px;
+    height: 30px;
+}
+
+button{
+    background-color: white;
+    border: solid grey;
+    padding: 2px 7px;
+}
