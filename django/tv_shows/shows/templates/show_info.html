@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Info</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/show_info.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="show_info">
+            <h1>TV Show {{show.id}}</h1>
+            <br>
+            <br>
+            <br>
+            <p>Title: {{show.title}}</p>
+            <br>
+            <p>Network: {{show.network.name}}</p>
+            <br>
+            <p>Release Date: {{show.release_date|date:'Y-m-d'}}</p>
+            <br>
+            <p>Description: {{show.description}}</p>
+        </div>
+        <a id="GoBack" href="http://localhost:8000/shows">Go Back</a>
+    </div>
+</body>
+</html>

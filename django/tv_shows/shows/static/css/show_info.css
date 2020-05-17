@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#GoBack{
+    display: inline-block;
+    width: 60px;
+}
+
+.show_info{
+    display: inline-block;
+    border: dashed red;
+    margin-left: 20px;
+}

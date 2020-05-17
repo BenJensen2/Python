@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit a Show</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/edit_show.css' %}">
+</head>
+<body>
+    <div class="container">
+        <form action="edit/update" method="POST">
+            {% csrf_token %}
+            <h1>Edit Show {{show.id}}</h1>
+            <br>
+                <p>Title</p>
+                <input type="text" name="show_title" placeholder={{show.title}}>
+                <br>
+                <table>
+                    <tr>
+                        <td>Network</td>
+                        <td>Release Date</td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><input type="text" name="show_network" placeholder={{show.network}}></td>
+                        <!--{{show.release_date}}  Not displaying in value-->
+                        <td><input type="date" name="show_release_date" value={{show.release_date|date:'Y-m-d'}}></td>
+                    </tr>
+                </table>
+                <br>
+                <p>Description</p>
+                <input type="text" name="show_description" placeholder={{show.description}}>
+                <button type="submit">Update</button>
+                <a href="http://localhost:8000/shows/{{show.id}}">Go to Show</a>
+        </form>
+        <a id="GoBack" href="http://localhost:8000/shows">Go Back</a>
+    </div>
+</body>
+</html>

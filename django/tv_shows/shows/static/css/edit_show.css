@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#GoBack{
+    display: inline-block;
+    width: 60px;
+}
+
+/* .container{
+    width: 700px;
+    min-height: 500px;
+    border: dashed purple;
+} */
+
+form {
+    display: inline-block;
+    border: dashed red;
+    width: 300px;
+    min-height: 500px;
+    margin: auto;
+}
