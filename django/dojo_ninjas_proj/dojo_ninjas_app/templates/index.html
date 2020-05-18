@@ -11,54 +11,103 @@
     <div class="container">
         <div class="add">
             <div class="add_dojo">
-                <form action="" method="post">
+                <h1>Add a Dojo</h1>
+                <br>                
+                <form action="new_dojo" method="post">
+                    {% csrf_token %}
                     <table>
                         <tr>
                             <td>Name</td>
-                            <td><input type="text"></td>
+                            <td><input type="text" name="name"></td>
                         </tr>
                         <tr>
                             <td>City</td>
-                            <td><input type="text"></td>
+                            <td><input type="text" name="city" ></td>
                         </tr>
                         <tr>
                             <td>State</td>
-                            <td><input type="text"></td>
+                            <td><input type="text" name="state" ></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><button>Add!</button></td>
+                            <td><button type="submit">Add!</button></td>
                         </tr>
                     </table>
                 </form>
             </div>
             <div class="add_ninja">
-                <form action="" method="post">
+                <h1>Add a Ninja</h1>
+                <br>
+                <form action="new_ninja" method="post">
+                    {% csrf_token %}
                     <table>
                         <tr>
                             <td>First Name</td>
-                            <td><input type="text"></td>
+                            <td><input type="text" name="first_name" ></td>
                         </tr>
                         <tr>
                             <td>Last Name</td>
-                            <td><input type="text"></td>
+                            <td><input type="text" name="last_name" ></td>
                         </tr>
                         <tr>
                             <td>Dojo</td>
-                            <select name="Dojo" id="">
-                                <option value="OC"></option>
-                                <option value="Seattle"></option>
-                            </select>
+                            <td>
+                                <select name = "dojo_id">
+                                    <option value="" style="color:lightslategrey;">-select a dojo-</option>
+                                    {% for dojos in all_dojos %}
+                                    <option value={{dojos.id}}>{{dojos.name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td><button>Add!</button></td>
+                            <td><button type="submit">Add!</button></td>
                         </tr>
                     </table>
                 </form>
             </div>
         </div>
-    </div>
-    
+        <br>
+        <div class="list">
+            <h1>All the Dojos</h1>
+            <br>
+            <ul>
+                {% for dojos in all_dojos %}
+                <li>
+                    <h3>
+                        {{dojos.name}}
+                        <form action="delete_dojo" method="post">
+                            {% csrf_token %}
+                            <button 
+                                type="submit"
+                                name="dojo_id"
+                                value="{{dojos.id}}">
+                                <img src="../static/img/dojo_delete.png" alt="">
+                            </button>
+                        </form>
+                    </h3>
+                </li>
+                <ul>
+                    {% for ninjas in dojos.ninjas.all %}
+                        <li>
+                            {{ninjas.first_name}}
+                            {{ninjas.last_name}}
+                            <form action="delete_ninja" method="post">
+                                {% csrf_token %}
+                                <button 
+                                    type="submit"
+                                    name="ninja_id"
+                                    value="{{ninjas.id}}">
+                                    <img src="../static/img/ninja_delete.jpeg" alt="">
+                                </button>
+                            </form>
+                        </li>
+                    {% endfor %}
+                </ul>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>    
 </body>
 </html>

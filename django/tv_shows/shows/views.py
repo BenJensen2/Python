@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse, redirect
-from .models import *
+from django.contrib import messages
+from .models import ShowManager, Network, Show
 
 def index(request):
     context = {
@@ -18,15 +19,21 @@ def create(request):
     description = request.POST['show_description']
 
     print(title, network, release_date, description)
-    
-    new_network = Network.objects.create(name=network)
-    Show.objects.create(title=title,network=new_network,release_date=release_date,description=description)
-    show_id = Show.objects.get(title=title).id
+    errors = Show.objects.basic_validator(request.POST)
+    if len(errors) > 0:
+        for key, value in errors.items():
+            messages.error(request, value)
+            return redirect('/shows/new')
+    else:
 
-    # network in 
-    # check 
-    # Show.objects.get(id=show_id).network.add(network)
-    return redirect(f'../{show_id}')
+        new_network = Network.objects.create(name=network)
+        Show.objects.create(title=title,network=new_network,release_date=release_date,description=description)
+        show_id = Show.objects.get(title=title).id
+
+        # network in 
+        # check 
+        # Show.objects.get(id=show_id).network.add(network)
+        return redirect(f'../{show_id}')
 
 def show_info(request,show_id):
     print(f'This is the info for show {show_id}')

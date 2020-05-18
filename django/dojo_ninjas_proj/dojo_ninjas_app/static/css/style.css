@@ -4,7 +4,7 @@
 }
 
 .container{
-    height: 500px;
+    min-height: 500px;
     width: 700px;
     border: dashed blue;
     margin: auto;
@@ -13,6 +13,40 @@
 .add{
     width: 500px;
     margin: auto;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
+    border-bottom: solid black;
+}
+
+.add h1{
+    text-align: center;
+}
+
+.add table{
+    border-spacing: 5px 10px;
+}
+
+.list{
+    width: 500px;
+    margin: auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.list form{
+    display: inline-block;
+}
+
+img{
+    width: 15px;
+    height: 15px;
+}
+
+.list button{
+    border: solid red ;
+    border-width: 1px;
+    border-radius: 15px;
+    text-decoration: line-through;
 }
