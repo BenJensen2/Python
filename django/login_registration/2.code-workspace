@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Reference"
+		},
+		{
+			"path": "../tv_shows"
+		}
+	],
+	"settings": {}
+}
