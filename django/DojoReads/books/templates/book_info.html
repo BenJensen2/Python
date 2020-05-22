@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Book</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/books_add.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="links">
+                <a href="/books">Home</a>
+                <a id="logout" href="/">Log Out</a>
+            </div>
+        </div>
+        <div class="main_contents">
+            <h3>Add a New Book Title and Review</h3>
+            <br>
+            <form action="/">
+                <div class="form-group row" >
+                    <label for="book_title" class="col-3">Book Title:</label>
+                    <input type="text" class="form-control col-8" id="book_title">
+                </div>
+                <div class="form-group-row">
+                    <h4>Author:</h4>
+                </div>
+                <div class="form-group row">
+                    <p class="col-1" ></p>
+                    <label for="author_list" class="col-3" >Choose from the list:</label>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu" id="author_list">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group row" >
+                    <p class="col-1" ></p>
+                    <label for="new_author" class="col-3">Or add new author:</label>
+                    <input type="text" class="form-control col-8" id="new_author">
+                </div>
+                <div class="form-group  row">
+                    <label for="review" class="col-3">Book Title:</label>
+                    <textarea class="form-control col-8" rows="5" id="review"></textarea>
+                </div>
+                <div class="form-group row">
+                    <label for="rating" class="col-2" >Rating:   </label>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu" id="rating">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                        </ul>
+                    </div>
+                    <p class="col-1"> stars</p>
+                </div>
+                <div class="form-group row">
+                    <p class="col-10" ></p>
+                    <button class="col-2" type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../tv_shows"
+		},
+		{
+			"path": ".."
 		}
 	],
 	"settings": {}

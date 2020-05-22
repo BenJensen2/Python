@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"name": "DojoReads",
+			"path": "."
+		},
+		{
+			"name": "Python",
+			"path": "../.."
+		},
+		{
+			"name": "Reference",
+			"path": "../../../Reference"
+		},
+		{
+			"name": "login_registration",
+			"path": "../login_registration"
+		},
+		{
+			"name": "May20LectureCode",
+			"path": "../../May20LectureCode"
+		},
+		{
+			"name": "DojoReads_Old",
+			"path": "../../../../DojoReads_Old"
+		},
+		{
+			"name": "books_authors_proj",
+			"path": "../books_authors_proj"
+		},
+		{
+			"name": "FinalExam",
+			"path": "../../FinalExam"
+		}
+	],
+	"settings": {}
+}

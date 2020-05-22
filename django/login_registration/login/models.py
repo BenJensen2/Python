@@ -1,5 +1,6 @@
 from django.db import models
 import re
+
 # from app_name.models import *
 # Only one direction: Model where the foreign key is.
 
@@ -29,7 +30,7 @@ class User(models.Model):
     last_name = models.CharField(max_length=255)
     birthday = models.DateTimeField()  # Figure out formatting for submission and display
     email_address = models.CharField(max_length=255)
-    password = models.CharField(max_length = 255)
+    password = models.CharField(max_length = 255) # At least 100  this is the only way to type qwerty
     # Encrypt within model: More Advanced Not Belt Exam
 
     created_at = models.DateTimeField(auto_now_add=True)

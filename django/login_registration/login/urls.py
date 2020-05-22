@@ -8,4 +8,5 @@ urlpatterns = [
     path('success',views.success)
     # Do not allow user who is not logged in to reach /success
     # i.e. by making a GET request in the address bar
+    
 ]

@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    padding: 30px;
+}
+.top{
+    display: flex;
+    float: right;
+    margin-bottom: 20px
+}
+
+#logout{
+    margin-left: 20px
+}
+
+.main_contents{
+    margin-top: 40px;
+    width: 70%;
+}

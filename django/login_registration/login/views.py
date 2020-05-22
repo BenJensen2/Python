@@ -89,6 +89,7 @@ def login(request):
         if request.POST['email'] == user.email_address:
             if bcrypt.checkpw(request.POST['pword'].encode(),user.password.encode()):
                 request.session['user_email'] = user.email_address
+                request.session['fname'] = user.first_name
                 # request.session['pword'] = user.password
                 print(user.email_address)
                 print(user.password)

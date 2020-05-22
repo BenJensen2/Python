@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    padding: 30px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top h1, .links{
+    display: inline-block;
+}
+
+#logout{
+    margin-left: 20px
+}
